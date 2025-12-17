@@ -34,6 +34,60 @@ Or replace `scalovate` with your GitHub username/organization.
 
 Or download as ZIP and extract to your desired location.
 
+## 🐳 Docker Quick Start (Recommended)
+
+The easiest way to run WiqayaX is using Docker:
+
+### Using Docker Compose (Easiest)
+
+```bash
+# Clone the repository
+git clone https://github.com/rulhaq/wiqayax-public.git
+cd wiqayax-public
+
+# Build and run with Docker Compose
+docker-compose up -d
+
+# Access the application at http://localhost:8080
+```
+
+### Using Docker directly
+
+```bash
+# Build the image
+docker build -t wiqayax .
+
+# Run the container
+docker run -d -p 8080:80 --name wiqayax-app wiqayax
+
+# Access at http://localhost:8080
+```
+
+### Development Mode with Docker
+
+```bash
+# Build and run development container
+docker build -f Dockerfile.dev -t wiqayax-dev .
+docker run -d -p 3000:3000 -v $(pwd):/app --name wiqayax-dev wiqayax-dev
+
+# Access at http://localhost:3000
+```
+
+### Stop and Remove Container
+
+```bash
+# Stop container
+docker stop wiqayax-app
+
+# Remove container
+docker rm wiqayax-app
+
+# Or using docker-compose
+docker-compose down
+```
+
+## 💻 Manual Installation
+
 ### Step 2: Install Dependencies
 
 Make sure you have **Node.js 18+** installed on your system.

@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  wiqayax:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    container_name: wiqayax-app
+    restart: unless-stopped
+    labels:
+      - "com.scalovate.description=WiqayaX - Private SAST Tool"
+      - "com.scalovate.version=1.0.0"
+
+  # Development mode (uncomment to use)
+  # wiqayax-dev:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile.dev
+  #   ports:
+  #     - "3000:3000"
+  #   container_name: wiqayax-dev
+  #   volumes:
+  #     - .:/app
+  #     - /app/node_modules
+  #   environment:
+  #     - NODE_ENV=development
+
