@@ -1,0 +1,41 @@
+{
+  "name": "wiqayax",
+  "version": "1.0.0",
+  "description": "100% Private SAST Tool by Scalovate Systems Solutions",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@google/genai": "^1.30.0",
+    "jspdf": "^2.5.2",
+    "jszip": "^3.10.1",
+    "lucide-react": "^0.555.0",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "recharts": "^3.5.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  },
+  "keywords": [
+    "sast",
+    "security",
+    "code-analysis",
+    "vulnerability-scanning",
+    "ai",
+    "ollama",
+    "vllm"
+  ],
+  "author": "Scalovate Systems Solutions",
+  "license": "MIT",
+}
